@@ -1,0 +1,46 @@
+{
+  "Pay_as_You_Go": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "call",
+        "line": "Voice: $3.50/minute"
+      },
+      {
+        "type": "sms",
+        "line": "Text message: $0.75/sent text "
+      },
+      {
+        "type": "public",
+        "line": "Data (email and internet): $16/MB "
+      }
+    ]
+  },
+  "Roam_Flex_Cuba_Data": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "public",
+        "line": "$75.00 for 30MB with extra usage charged at $2.50/MB"
+      }
+    ]
+  }
+}

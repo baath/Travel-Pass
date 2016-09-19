@@ -1,0 +1,114 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.form-card {
+    margin: 2% 1%;
+    margin: 0px auto;
+    margin-bottom: 3%;
+    background-color: ghostwhite;
+    min-width: 345px;
+    transition: left 2s;
+    float: left;
+    clear: both;
+}
+
+.mdl-textfield {
+    max-width: 270px;
+}
+
+.center {
+    display: flex;
+    margin: 0px auto;
+    margin-top: 2%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+fieldset {
+    margin: 1em;
+}
+
+.mdl-card__title {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.flatpickr-input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit
+}
+
+.switch-right {
+    width: 60px;
+    float: right
+}
+
+dialog::backdrop {
+    background-color: #003767;
+}
+
+#submit-container {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; /* center items horizontally, in this case */
+}
+
+.skew {
+    padding: 5px;
+    margin-top: 50px;
+    position: relative;
+}
+.skew:after {
+    position: absolute;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    top: 0px;
+    left: 0px;
+    transform-origin: top left;
+    transform: skewY(-6deg);
+}
+
+.foot-item{
+    text-decoration: none;
+    margin: 0 1%;
+    padding: 0 2%;
+    opacity: 1.3;
+    border-right: 1px solid grey;
+    width:43.5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mdl-logo{
+    width: 100%;
+}
+.foot-item img{
+    padding: 0 43%;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 500px){
+    .mdl-mini-footer__left-section{
+        width: 93%;
+    }
+    .mdl-mini-footer__right-section{
+        display: none;
+    }
+}

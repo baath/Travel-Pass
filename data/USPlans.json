@@ -1,0 +1,163 @@
+{
+  "Pay_as_You_Go": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "call",
+        "line": "Voice : $1.45/minute"
+      },
+      {
+        "type": "sms",
+        "line": "Text messaging: $0.75/sent text "
+      },
+      {
+        "type": "public",
+        "line": "Internet and email: $6/Mb "
+      }
+    ]
+  },
+  "Voice_Flex_USA_at_0": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "public",
+        "line": "Tier 1 - $0 / 0 mins"
+      },
+      {
+        "type": "public",
+        "line": "Tier 2 - $15/300 mins"
+      },
+      {
+        "type": "public",
+        "line": "Tier 3 - $15 + $0.10/min"
+      },
+      {
+        "type": "flight",
+        "line": "Long Distance: $0.95/min"
+      }
+    ]
+  },
+  "Corporate_Text_Flex_USA": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "sms",
+        "line": "0 sent texts: $0"
+      },
+      {
+        "type": "sms",
+        "line": "Unlimited texts: $5"
+      }
+    ]
+  },
+  "US_Voice_and_Text_30": {
+    "recommended": "yes",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "call",
+        "line": "Includes 1000 minutes from US, over usage rate will be $0.15 per minute"
+      },
+      {
+        "type": "sms",
+        "line": "Unlimited incoming and outgoing text messaging within the U.S"
+      },
+      {
+        "type": "flight",
+        "line": "Long distance: $0.95/min. for calls terminating outside of Canada/U.S"
+      }
+    ]
+  },
+  "USA_Roaming_Data_Flex_at_0": {
+    "recommended": "yes",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "public",
+        "line": "Tier 1 - $0 / 0MB"
+      },
+      {
+        "type": "public",
+        "line": "Tier 2 - $20 Upto 250MB"
+      },
+      {
+        "type": "public",
+        "line": "Tier 3 - $30 Upto 500 MB"
+      },
+      {
+        "type": "public",
+        "line": "Tier 4 - $50 Upto 1 GB"
+      },
+      {
+        "type": "public",
+        "line": "Tier 5 - $100 Upto 2 GB"
+      },
+      {
+        "type": "public",
+        "line": "Tier 6 - $150 Upto 3 GB"
+      },
+      {
+        "type": "public",
+        "line": "Tier 7 - $250 Upto 5 GB + $0.05/MB over limit"
+      }
+    ]
+  }
+}

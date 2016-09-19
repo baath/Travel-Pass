@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks</title>
+    <link rel="icon" href="https://www.sheridancollege.ca/SheridanCollege/img/favicon.ico" type="image/x-icon"/>
+    <script src="../external/pace/pace.min.js"></script>
+    <link href="../external/pace/flash.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-deep_orange.min.css"/>
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+    <link href='../form.css' rel='stylesheet' type='text/css'>
+    <link href='confirm.css' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO3Whi86ri5QLKOmfc1OSpXfYgcAsfz7s&callback=initMap"></script>
+    <script src="confirm.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<section>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--16dp animated fadeInLeft">
+        <thead>
+        <th>Personal information</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Name:</td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td id="email"></td>
+        </tr>
+        <tr>
+            <td>Manager's Email:</td>
+            <td id="manemail"></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--16dp animated fadeIn">
+        <thead>
+        <th>Travel information</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Departure Date:</td>
+            <td id="departure_date"></td>
+        </tr>
+        <tr>
+            <td>Returning Date:</td>
+            <td id="returning_date"></td>
+        </tr>
+        <tr>
+            <td>Cell Number:</td>
+            <td id="phone"></td>
+        </tr>
+        </tbody>
+    </table>
+    </table>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--16dp animated fadeInRight">
+        <thead>
+        <th>Add-ons Requested</th>
+        </thead>
+        <tbody id="addons">
+        </tbody>
+    </table>
+</section>
+
+<br/>
+<main>
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored back"><i
+            class="material-icons">edit</i>Edit</a>
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored show-modal"><i
+            class="material-icons">done</i>Confirm</a>
+</main>
+<dialog class="mdl-dialog" style="width: 320px;">
+    <h4 class="mdl-dialog__title">Have a Safe Journey</h4>
+    <div class="mdl-dialog__content">
+        <img class="mdl-layout-icon"
+             src="http://shmector.com/_ph/12/221844079.png"
+             alt="Aeroplane Image"
+             width=300px">
+        <p>
+            Thank you for adding Travel Add-ons to your smartphone plan
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored close" style="margin: 3% 2%;">Close</a>
+
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored it-page">Best
+            Practics: Mobile Roaming</a>
+
+    </div>
+</dialog>
+
+
+<link rel="prefetch" href="http://it.sheridanc.on.ca/service-catalogue/technology-provisioning/about-roaming.html">
+</body>
+</html>

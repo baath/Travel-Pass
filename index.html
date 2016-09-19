@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add travel Add-ons</title>
+
+    <link rel="icon" href="https://www.sheridancollege.ca/SheridanCollege/img/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="Add Travel Add-ons to your Device prior to your Journeys">
+
+    <!-- Tells Google not to provide a translation for this page -->
+    <meta name="google" content="notranslate">
+
+    <!-- Makes sure your website shows up in all countries and languages -->
+    <meta name="coverage" content="Worldwide">
+    <script src="external/pace/pace.min.js"></script>
+    <link href="external/pace/flash.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-deep_orange.min.css"/>
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://use.typekit.net/c/2eb5f0/1w;aktiv-grotesk-std,2,ZHd:R:i4,ZHX:R:i7,ZHf:R:n3,ZHk:R:n4,ZHW:R:n7/l"
+          rel="stylesheet" type="text/css">
+
+    <!-- Date Picker Library CDN-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/1.8.6/flatpickr.material_green.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/1.8.6/flatpickr.min.js"></script>
+
+    <!--Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body onload="loadValuesinDropDown()" class="animated fadeInDown">
+<header>
+    <img src="https://support.sheridancollege.ca/files/sheridan-IT-large.png"
+         alt="Sheridan Information Technology Logo"
+         width="340"
+         class="center"/>
+</header>
+<br/>
+<form name="travel" action="confirm/thanks.html" method="post" autocomplete="off" onsubmit="confirm();">
+    <!--Forms to be filled-->
+    <div class="mdl-grid">
+        <!-- Personal information Card-->
+        <div class="form-card mdl-card input-card mdl-shadow--24dp">
+            <div class="mdl-card__title">
+                <h2 class="center mdl-card__title-text">Personal information</h2>
+            </div>
+            <fieldset>
+                <i class="material-icons mdl-textfield__icon ">account_circle</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input"
+                           type="text"
+                           id="name"
+                           name="name"
+                           autofocus="autofocus"
+                           maxlength="40"
+                           minlength="8"
+                           title="Please enter your full Name">
+                    <label class="mdl-textfield__label" for="name">Full Name</label>
+                    <span class="mdl-textfield__error">Please enter your Full name!</span>
+                </div>
+                <br/>
+                <i class="material-icons mdl-textfield__icon">email</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input"
+                           type="email"
+                           id="email"
+                           name="email"
+                           pattern="[a-z0-9._%+-]+@sheridancollege\.ca$"
+                           maxlength="50"
+                           minlength="8"
+                           title="Enter your Sheridan Email Address eg. John@sheridancollege.ca">
+                    <label class="mdl-textfield__label" for="email">Sheridan Email Address</label>
+                    <span class="mdl-textfield__error">Enter email ending with @sheridancollege.ca</span>
+                </div>
+                <br/>
+                <i class="material-icons mdl-textfield__icon">email</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input"
+                           type="email"
+                           id="manemail"
+                           name="manemail"
+                           pattern="[a-z0-9._%+-]+@sheridancollege\.ca$"
+                           maxlength="50"
+                           minlength="8"
+                           title="Enter your Manager's Email Address eg. Mike@sheridancollege.ca">
+
+                    <label class="mdl-textfield__label" for="manemail">Manager's Email Address</label>
+                    <span class="mdl-textfield__error">Enter email ending with @sheridancollege.ca</span>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Travel Information Card -->
+        <div class="form-card mdl-card input-card mdl-shadow--24dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text center">Travel information</h2>
+            </div>
+            <fieldset>
+                <i class="material-icons mdl-textfield__icon">flight_takeoff</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input flatpickr"
+                           id="depart_date"
+                           name="depart_date"
+                           data-defaultDate="today"
+                           data-mindate="today"
+                           data-altinput=true
+                           data-altFormat="F j, Y"
+                           required>
+                    <label class="mdl-textfield__label" for="depart_date">Depart Date</label>
+                    <span class="mdl-textfield__error">Please enter Departure Dates</span>
+                </div>
+                <br/>
+                <i class="material-icons mdl-textfield__icon ">flight_land</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input flatpickr"
+                           id="return_date"
+                           name="return_date"
+                           data-defaultDate="today"
+                           data-mindate="today"
+                           data-altinput=true
+                           data-altFormat="F j, Y"
+                           required><label class="mdl-textfield__label" for="return_date">Return Date</label>
+                    <span class="mdl-textfield__error">Please enter Return Date</span>
+                </div>
+
+
+                <br/>
+                <i class="material-icons mdl-textfield__icon">smartphone</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input"
+                           type="tel"
+                           id="phone"
+                           name="phone"
+                           maxlength="12"
+                           minlength="9"
+                           pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                           title="Example: 999-999-9999">
+                    <label class="mdl-textfield__label" for="phone">Cell Number</label>
+                    <span class="mdl-textfield__error">Format: 999-999-9999</span>
+                </div>
+                <br/>
+                <i class="mdl-textfield__icon material-icons">location_on</i>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input"
+                           type="text"
+                           id="country"
+                           name="country"
+                           Title="Country you are traveling to"
+                           maxlength="45"
+                           minlength="2"
+                           size="100"
+                           list="countryNames"
+                           autocomplete="on"
+                           oninput="listAddons()">
+                    <label class="mdl-textfield__label" for="country">Country </label>
+                    <span class="mdl-textfield__error">Please enter Country Name</span>
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+    <br/>
+    <!-- Next Card -->
+    <div class="plans">
+        <div class="US mdl-grid animated slideInUp skew" id="US">
+        </div>
+        <br/>
+        <div class="Zone1 mdl-grid animated slideInUp skew" id="Zone1"></div>
+        <br/>
+        <div class="Zone2 mdl-grid animated slideInUp skew" id="Zone2"></div>
+        <br/>
+        <div class="Zone3 mdl-grid animated slideInUp skew" id="Zone3"></div>
+        <br/>
+        <div class="Zone4 mdl-grid animated slideInUp skew" id="Zone4"></div>
+    </div>
+    <main>
+        <section id="submit-container" style="width:auto;padding:3%;">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="terms" style="width:auto;">
+                <input type="checkbox" name="terms" id="terms" class="mdl-checkbox__input" required>
+                <span class="mdl-checkbox__label">I have read and agree to <a
+                        href="https://policy.sheridanc.on.ca/dotNet/documents/?public=true&docid=838&mode=view"
+                        target="_blank">Sheridan's Employee Technology Policy</a></span>
+            </label>
+            <br/><br>
+            <button type="submit"
+                    id="show-dialog"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">send</i> Submit
+            </button>
+        </section>
+    </main>
+    <footer class="mdl-mini-footer" style="margin: 0px; padding: 0px;">
+        <a class="mdl-mini-footer__left-section foot-item" href="tel:+19058459430,2150">
+            <h3>Call IT</h3>
+            <div class="mdl-logo">
+                <img src="http://images.clipartpanda.com/phone-call-icon-Phone_number_telephone_call_mobile.png"
+                     alt="Call icon" width="100px">
+            </div>
+        </a>
+        <a class="mdl-mini-footer__right-section foot-item"
+           href="javascript:BG.start(BG.START_TYPE.CHAT, { issue: { id: 1 }, uiOptions: { fallbackToFullWindow: true } });">
+            <h3>Support with IT</h3>
+            <div class="mdl-logo">
+                <img src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/chat-2-icon.png" alt="Support Chat"
+                     width="100px">
+            </div>
+        </a>
+
+        <!-- Countries List -->
+        <datalist id="countryNames"></datalist>
+    </footer>
+
+
+</form>
+<script>
+    /* Initialize Date Picker Library*/
+    flatpickr(".flatpickr");
+
+    //Hide all
+    document.getElementById("submit-container").style.display = "none";
+</script>
+<script src="load.js"></script>
+<!--Bomgar Stuff-->
+<script type="text/javascript" src="https://support.sheridancollege.ca/api/start_session.js"></script>
+<script type="text/javascript">
+    BG.setSite("support.sheridancollege.ca");
+</script>
+<!--End of Bomgar Stuff-->
+
+</body>
+</html>

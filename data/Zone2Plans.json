@@ -1,0 +1,145 @@
+{
+  "Pay_as_You_Go": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "call",
+        "line": "Voice: $3/minute"
+      },
+      {
+        "type": "sms",
+        "line": "Text message: $0.75/sent text "
+      },
+      {
+        "type": "public",
+        "line": "Data (email and internet): $12/MB "
+      }
+    ]
+  },
+  "ZOne2_Voice_Flex_at_0": {
+    "recommended": "no",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "public",
+        "line": "$0 for 0mins"
+      },
+      {
+        "type": "public",
+        "line": "$40 for 50 mins"
+      },
+      {
+        "type": "public",
+        "line": "$40 + $0.80/min over 50 mins limit"
+      }
+    ]
+  },
+  "Zone2_Text_Flex_": {
+    "recommended": "no",
+    "summary": "Unlimited incoming text messaging is included in all features",
+    "tag": [
+      {
+        "category": "text"
+      }
+    ],
+    "detail": [
+      {
+        "type": "sms",
+        "line": "0 sent texts: $0"
+      },
+      {
+        "type": "sms",
+        "line": "Up to 200 outgoing texts: $40"
+      },
+      {
+        "type": "sms",
+        "line": "Over 200 outgoing texts: $40 + $0.20/sent text"
+      }
+    ]
+  },
+  "Zone2_International_Combo_60": {
+    "recommended": "Yes",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "call",
+        "line": "50 minutes. Additional $0.80/min"
+      },
+      {
+        "type": "sms",
+        "line": "200 sent text messages. Additional $0.20/ sent text"
+      },
+      {
+        "type": "sms",
+        "line": "Unlimited incoming text"
+      }
+    ]
+  },
+  "Data_Flex_Zone2_at_0": {
+    "recommended": "Yes",
+    "summary": "You don't need to fill out this form if you intend to you Pay As You go Plan",
+    "tag": [
+      {
+        "category": "voice"
+      },
+      {
+        "category": "text"
+      },
+      {
+        "category": "data"
+      }
+    ],
+    "detail": [
+      {
+        "type": "public",
+        "line": "$0 for 0MB"
+      },
+      {
+        "type": "public",
+        "line": "$40 up to 50 MB"
+      },
+      {
+        "type": "public",
+        "line": "$90.00 up to 200 MB"
+      },
+      {
+        "type": "public",
+        "line": "$90.00 + $1.00/MB Over 200 MB limit"
+      }
+    ]
+  }
+}
