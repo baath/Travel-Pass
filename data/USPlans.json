@@ -132,31 +132,31 @@
     "detail": [
       {
         "type": "public",
-        "line": "Tier 1 - $0 / 0MB"
+        "line": "$0 / 0MB"
       },
       {
         "type": "public",
-        "line": "Tier 2 - $20 Upto 250MB"
+        "line": "$20 Upto 250MB"
       },
       {
         "type": "public",
-        "line": "Tier 3 - $30 Upto 500 MB"
+        "line": "$30 Upto 500 MB"
       },
       {
         "type": "public",
-        "line": "Tier 4 - $50 Upto 1 GB"
+        "line": "$50 Upto 1 GB"
       },
       {
         "type": "public",
-        "line": "Tier 5 - $100 Upto 2 GB"
+        "line": "$100 Upto 2 GB"
       },
       {
         "type": "public",
-        "line": "Tier 6 - $150 Upto 3 GB"
+        "line": "$150 Upto 3 GB"
       },
       {
         "type": "public",
-        "line": "Tier 7 - $250 Upto 5 GB + $0.05/MB over limit"
+        "line": "$250 Upto 5 GB + $0.05/MB over limit"
       }
     ]
   }
